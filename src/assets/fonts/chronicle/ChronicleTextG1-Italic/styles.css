@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'ChronicleTextG1-Italic';
+  src: url('ChronicleTextG1-Italic.eot?#iefix') format('embedded-opentype'),  url('ChronicleTextG1-Italic.otf')  format('opentype'),
+	     url('ChronicleTextG1-Italic.woff') format('woff'), url('ChronicleTextG1-Italic.ttf')  format('truetype'), url('ChronicleTextG1-Italic.svg#ChronicleTextG1-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
