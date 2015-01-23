@@ -4,44 +4,121 @@
  *
  **/
 
- /*****************************************
+/****************************************
  * Fonts
- */
+****************************************/
+/* Chronicle */
 @font-face {
-    font-family: 'Conv_MuseoSans-100';
-    src: url('fonts/MuseoSans-100.eot');
-    src: local('☺'), url('fonts/MuseoSans-100.woff') format('woff'), url('fonts/MuseoSans-100.ttf') format('truetype'), url('fonts/MuseoSans-100.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-  font-family: 'ChronicleTextG1-BoldItalic';
-  src: url('ChronicleTextG1-BoldItalic.eot?#iefix') format('embedded-opentype'),  url('ChronicleTextG1-BoldItalic.otf')  format('opentype'),
-         url('ChronicleTextG1-BoldItalic.woff') format('woff'), url('ChronicleTextG1-BoldItalic.ttf')  format('truetype'), url('ChronicleTextG1-BoldItalic.svg#ChronicleTextG1-BoldItalic') format('svg');
+  font-family: 'ChronicleTextG1-Roman';
+  src: url('../fonts/chronicle/ChronicleTextG1-Roman/ChronicleTextG1-Roman.eot?#iefix') format('embedded-opentype'),  url('../fonts/chronicle/ChronicleTextG1-Roman/ChronicleTextG1-Roman.otf')  format('opentype'),
+         url('../fonts/chronicle/ChronicleTextG1-Roman/ChronicleTextG1-Roman.woff') format('woff'), url('../fonts/chronicle/ChronicleTextG1-Roman/ChronicleTextG1-Roman.ttf')  format('truetype'), url('../fonts/chronicle/ChronicleTextG1-Roman/ChronicleTextG1-Roman.svg#ChronicleTextG1-Roman') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-.one-title {
-    margin: 0 67px;
+/* MuseoSans */
+@font-face {
+    font-family: 'MuseoSans-100';
+    src: url('../fonts/museo-sans/MuseoSans-100/MuseoSans-100.eot?#iefix') format('embedded-opentype'),  url('../fonts/museo-sans/MuseoSans-100/MuseoSans-100.otf')  format('opentype'),
+        url('../fonts/museo-sans/MuseoSans-100/MuseoSans-100.woff') format('woff'), url('../fonts/museo-sans/MuseoSans-100/MuseoSans-100.ttf')  format('truetype'), url('../fonts/museo-sans/MuseoSans-100/MuseoSans-100.svg#MuseoSans-100') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
-h1 {
+@font-face {
+    font-family: 'MuseoSans-500';
+    src: url('../fonts/museo-sans/MuseoSans-500MuseoSans-500.eot?#iefix') format('embedded-opentype'),  url('../fonts/museo-sans/MuseoSans-500MuseoSans-500.otf')  format('opentype'),
+        url('../fonts/museo-sans/MuseoSans-500MuseoSans-500.woff') format('woff'), url('../fonts/museo-sans/MuseoSans-500MuseoSans-500.ttf')  format('truetype'), url('../fonts/museo-sans/MuseoSans-500MuseoSans-500.svg#MuseoSans-500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MuseoSans-700';
+    src: url('../fonts/museo-sans/MuseoSans-700/MuseoSans-700.eot?#iefix') format('embedded-opentype'),  url('../fonts/museo-sans/MuseoSans-700/MuseoSans-700.otf')  format('opentype'),
+        url('../fonts/museo-sans/MuseoSans-700/MuseoSans-700.woff') format('woff'), url('../fonts/museo-sans/MuseoSans-700/MuseoSans-700.ttf')  format('truetype'), url('../fonts/museo-sans/MuseoSans-700/MuseoSans-700.svg#MuseoSans-700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'MuseoSans-900';
+  src: url('../fonts/museo-sans/MuseoSans-900/MuseoSans-900.eot?#iefix') format('embedded-opentype'),  url('../fonts/museo-sans/MuseoSans-900/MuseoSans-900.otf')  format('opentype'),
+       url('../fonts/museo-sans/MuseoSans-900/MuseoSans-900.woff') format('woff'), url('../fonts/museo-sans/MuseoSans-900/MuseoSans-900.ttf')  format('truetype'), url('../fonts/museo-sans/MuseoSans-900/MuseoSans-900.svg#MuseoSans-900') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+/****************************************
+ * Style
+****************************************/
+.one-title-first {
+    padding: 0 72px;
+    margin:55px 0 0 0;    
+}
+.one-title-first h1,h2 {
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size:35px;  
+}
+
+.one-title-second {
+    font-family: 'ChronicleTextG1-Roman, Times New Roman' !important;
+    font-style: italic;
+    font-size: 20px;
+    padding : 0 75px;
+    line-height: 20px
+}
+.one-title-third {
+    padding: 0 67px;
+}
+.one-title-third h1 {
+    font-family: 'MuseoSans-900' !important;
+    font-size: 68px;    
+
+}
+.one-subtitle-third {
+    font-family: 'ChronicleTextG1-Roman, Times New Roman' !important;
+    font-style: italic;
+    font-size:26px;
+    padding: 0 67px;  
+}
+.one-animation {
+  height: 430px;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
     color:black;
-    font-size: 55px;
     margin:0 0 0 0; !important;
     padding:0px;
-
+}
+h1{
+    font-size: 55px;
 }
 
 
-/***************************************
-*  Base App
+/****************************************
+ * Base App
 ****************************************/
 .red {
     background-color: red;
 }
 .blue {    
     background-color: blue;
+}
+.sky {
+    background-color: #B8FAFB;
+}
+.white {
+    background-color: white;
+}
+.orange {
+    background-color: #FFA200;
+}
+.violet {
+    background-color:#A12D9C;
 }
 .margin-bottom-5, 
 .margin-bottom-10, 
