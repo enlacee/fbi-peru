@@ -205,8 +205,16 @@ ul li span {
     color: black;
 }
 .btn-download {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 0;
+    color: rgba(255, 162, 0, 1);
+    font-weight: bold;
     font-family: 'Arial';
     margin:35px 0 70px 20px;
+    padding: 17px; 
+}
+.btn-download::hover{
+    color: rgba(255, 162, 0, 1);
 }
 
 /* general */
