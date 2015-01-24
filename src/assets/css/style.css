@@ -75,8 +75,7 @@
 }
 .one-title-third h1 {
     font-family: 'MuseoSans-900' !important;
-    font-size: 68px;    
-
+    font-size: 68px;
 }
 .one-subtitle-third {
     font-family: 'ChronicleTextG1-Roman' !important;
@@ -217,6 +216,10 @@ ul li span {
     background-color: rgba(255, 255, 255, 0.7);
     color: rgba(255, 162, 0, 1);
 }
+/* four */
+.four .two-description{
+    margin:10px 0 78px 0;
+}
 
 /* general */
 h1,h2,h3,h4,h5,h6 {
@@ -231,6 +234,35 @@ h1{
     margin: 0px auto;
 }
 
+div.centered 
+{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+div.centered table 
+{
+    /*margin: 0 auto;*/
+    text-align: left;
+}
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 300px) and (max-width: 992px) {
+    .table1{
+        margin: 0 auto;      
+    }
+    .table2{
+        margin: 0 auto;         
+    }
+}
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width:992px) {
+    .table1{
+        margin: 0px 0px 0px auto;      
+    }
+    .table2{
+        margin: 0px;        
+    }
+}
 /****************************************
  * Base App
 ****************************************/
@@ -261,6 +293,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 .violet {
     background-color:#A12D9C;
 }
+.text-color-white {
+    color: white;
+}
+
 .margin-bottom-5, 
 .margin-bottom-10, 
 .margin-bottom-15, 
@@ -328,4 +364,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
   .md-margin-bottom-60 {
     margin-bottom: 60px;
   }
+}
+
+/********************************
+*** my media query
+ ********************************/
+ @media screen and (max-width: 500px) {
+    .one-title-third h1 {
+        font-size: 34px;
+        color:red;
+    }
+    .one-subtitle-third {
+        font-size:18px;
+        padding: 0 0 0 0;        
+    }
 }
