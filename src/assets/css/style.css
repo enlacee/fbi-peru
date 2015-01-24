@@ -204,7 +204,10 @@ ul li span {
     /* Text color */
     color: black;
 }
-
+.btn-download {
+    font-family: 'Arial';
+    margin:35px 0 70px 20px;
+}
 
 /* general */
 h1,h2,h3,h4,h5,h6 {
