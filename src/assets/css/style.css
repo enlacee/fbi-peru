@@ -60,11 +60,11 @@
 .one-title-first h1,h2 {
     font-family: 'Arial';
     font-weight: bold;
-    font-size:35px;  
+    font-size: 25px;  
 }
 
 .one-title-second {
-    font-family: 'ChronicleTextG1-Roman, Times New Roman' !important;
+    font-family: 'ChronicleTextG1-Roman' !important;
     font-style: italic;
     font-size: 20px;
     padding : 0 75px;
@@ -79,7 +79,7 @@
 
 }
 .one-subtitle-third {
-    font-family: 'ChronicleTextG1-Roman, Times New Roman' !important;
+    font-family: 'ChronicleTextG1-Roman' !important;
     font-style: italic;
     font-size:26px;
     padding: 0 67px;  
@@ -88,7 +88,125 @@
   height: 430px;
 }
 
+.box-left, .box-right{
+    /**width: 20%;*/
+    height:80px;
+}
+.box-left {
+    background: transparent url('../img/box-shadow-left.png') no-repeat top right;
+}
+.box-right{
+    background: transparent url('../img/box-shadow-right.png') no-repeat top left;
+}
+.box-center {
+    display: block;    
+    padding: 0px;
+    /*width: 40%*/
+}
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 300px) and (max-width: 992px) {
+    .box-left{
+        display: none;     
+    }
+    .box-right{
+        display: none;       
+    }
+}
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width:992px) {
+    .box-left{
+        display: block;     
+    }
+    .box-right{
+        display: block;       
+    }
+}
+.box-title {
+    padding: 28px;
+    position: absolute;
+    display: block;
+    bottom: -15px;
+    border: 1px solid red;
+    background-color: white;
+    width: 100%;
+}
+.box-center h2{
+    font-family: 'MuseoSans-700' !important;
+}
 
+/*two*/
+
+.two-description {
+    font-family: 'ChronicleTextG1-Roman' !important;
+    font-style: italic;
+    font-size:26px;
+    padding: 0 67px;
+    margin: 0 0 0 0;
+}
+.twin-column {
+    font-family: 'MuseoSans-100' !important;
+    font-style: italic;
+    font-size: 16px;
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width: 300px) and (max-width: 992px) {
+    .twin-column-left{
+        padding: 0 0 40px 0;      
+    }
+    .twin-column-right{
+        padding: 0;        
+    }
+}
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width:992px) {
+    .twin-column-left{
+        padding: 0 0 0 150px;
+    }
+    .twin-column-right{
+        padding: 0 150px 0 0;
+    }
+}
+
+.two-animation {
+    height: 267px;
+    /*background: transparent url('../img/manocelu.png') no-repeat top right;*/
+}
+/* three */
+.man-pencil {   
+    display: block;
+    height: 130px;
+    clear: both;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+
+.three-description {
+    font-family: 'MuseoSans-100' !important;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23px;      
+
+}
+.three-description  ul li {
+    margin: 0 0 18px 0; 
+}
+ul li {
+    /* Bullet color */
+    color: white;
+    list-style-type: disc;
+}
+
+ul li span {
+    /* Text color */
+    color: black;
+}
+
+
+/* general */
 h1,h2,h3,h4,h5,h6 {
     color:black;
     margin:0 0 0 0; !important;
@@ -97,22 +215,33 @@ h1,h2,h3,h4,h5,h6 {
 h1{
     font-size: 55px;
 }
-
+.img-center {
+    margin: 0px auto;
+}
 
 /****************************************
  * Base App
 ****************************************/
 .red {
-    background-color: red;
+    /**background-color: red;*/
+    border:1px solid red;
 }
 .blue {    
-    background-color: blue;
+    /**background-color: blue;*/
+    border:1px solid blue;
 }
 .sky {
     background-color: #B8FAFB;
 }
 .white {
-    background-color: white;
+    /*background-color: white;*/
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.12) 50%, rgba(204,204,204,0.2) 82%, rgba(124,124,124,0.23) 94%, rgba(79,79,79,0.24) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.12)), color-stop(82%,rgba(204,204,204,0.2)), color-stop(94%,rgba(124,124,124,0.23)), color-stop(100%,rgba(79,79,79,0.24))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.12) 50%,rgba(204,204,204,0.2) 82%,rgba(124,124,124,0.23) 94%,rgba(79,79,79,0.24) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.12) 50%,rgba(204,204,204,0.2) 82%,rgba(124,124,124,0.23) 94%,rgba(79,79,79,0.24) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.12) 50%,rgba(204,204,204,0.2) 82%,rgba(124,124,124,0.23) 94%,rgba(79,79,79,0.24) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.12) 50%,rgba(204,204,204,0.2) 82%,rgba(124,124,124,0.23) 94%,rgba(79,79,79,0.24) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#3d4f4f4f',GradientType=0 ); /* IE6-9 */
 }
 .orange {
     background-color: #FFA200;
