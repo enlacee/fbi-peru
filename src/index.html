@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css?a=se">
+    <link rel="stylesheet" href="assets/css/style.css?a=ss">
     <title>Las marcas peruanas del futuro</title>
 </head>
 <body>
@@ -167,14 +167,15 @@
                 <div class="row margin-bottom-65">
                     <div class="col-md-12 two-description  ">
                         <p>El estudio demuestra que cuando las personas clasifican a una marca como una “future brand”, la intención de querer comprar uno de sus productos y trabajar en la empresa es casi 3 veces mayor en comparación con una marca corporativa.</p>
+                        <p>De esta manera ser una “future brand” influye en la elección de los productos y servicios que se deciden comprar, así como también tiene un impacto en el lugar donde se elige trabajar.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="centered">
-                        <table  class="table1" width="auto" border="1" align="" >
+                        <table  class="table1" border="0">
                             <tr>
-                                <td>Les gustaria trabajar</td>                                
+                                <td class="table-head">Les gustaria trabajar</td>                                
                             </tr>
                             <tr>
                                 <td>
@@ -186,9 +187,9 @@
                     </div>
                     <div class="col-md-6">
                         <div class="centered">
-                        <table class="table2" width="auto" border="1" align="">
+                        <table class="table2" border="0">
                             <tr>
-                                <td>Les gustaria comprar</td>
+                                <td class="table-head">Les gustaria comprar</td>
                             </tr>
                             <tr>
                                 <td>
@@ -199,24 +200,101 @@
                         </div>                       
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <a href="#download" class="btn btn-default btn-lg btn-download-black">Descargar el Ranking<span class="hidden-xs"> completo</span></a>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-        <div class="five violet">
+        <div class="five violet" id="download">
             <div class="container">
-                <div class="row">
-                    <div class="col-m-12 one-title-first margin-bottom-40 ">
-                        <h2>Future violet</h2>
-                    </div>
+                <div class="row margin-bottom-60">
                 </div>
                 <div class="row">
-                    <div class="col-m-12 one-title-second margin-bottom-40 ">
-                        <p>
-                        The<br />
-                        creative<br />
-                        future<br />
-                        company.
-                        <p>
+                    <div class="col-md-7">
+                        <div>
+                            <img class="img-responsive" width="650px" src="assets/img/manonegra.png" alt="mano">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="col-md-9">
+                            <h2>Descarga el Ranking aquí</h2>
+                            <div class="rows">
+<!--start form-->
+<form action="send-mail.php" method="POST" id="download-form" name="download-form">
+    <fieldset name="field-set-contact" >
+    <ul>
+        <li>
+            <div class="form-group">
+                <label for="nombre" class="col-md-3 control-label">
+                    <span class="color-text-blue">Nombre:</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control required" name="nombre" />
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="form-group">
+                <label for="apellido" class="col-md-3 control-label">
+                    <span class="color-text-blue">Apellido:</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control required " name="apellido" />
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="form-group">
+                <label for="compania" class="col-md-3 control-label">
+                    <span class="color-text-blue">Compañia:</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control required" name="compania" />
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="form-group">
+                <label for="puesto" class="col-md-3 control-label">
+                    <span class="color-text-blue">Puesto:</label>
+                <div class="col-md-9">
+                  <input type="text" class="form-control required " name="puesto" />
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="form-group">
+                <label for="email" class="col-md-3 control-label">
+                    <span class="color-text-blue">Email:</label>
+                <div class="col-md-9">
+                  <input type="email" class="form-control required email " name="email" />
+                </div>
+            </div>
+        </li>               
+
+        <li>
+            <div class="form-group">
+                <div class="col-md-12 text-center">
+                    <button type="submit" 
+                    class="btn btn-default btn-send">Enviar</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+    </fieldset>
+</form>
+<span id="contact-message" class="hide">
+    <h4>Se envio correctamente su mensajé, revise su correo Gracias.</h4>
+</span>
+<span id="contact-message-bad" class="hide">
+    <h4>Lo sentimos en estos momentos no podemos enviar email.</h4>
+</span>  
+<!--end form-->
+                            </div>
+                        </div>
+                        <div class="col-md-3"></div>
                     </div>
                 </div>
             </div>
@@ -245,6 +323,46 @@
     </div>
 
 
-    <script type='text/javascript' src='assets/plugins/bootstrap/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='assets/js/plugins/jquery.min.js'></script>
+    <script type='text/javascript' src='assets/plugins/bootstrap/js/bootstrap.min.js'></script>    
+    <script type='text/javascript' src='assets/js/plugins/jquery-validate/jquery.validate.min.js'></script>
+    <script type='text/javascript' src='assets/js/plugins/jquery-validate/message.es.js'></script>
+    <script type="text/javascript">
+/**
+ * page download
+ * 
+ */
+$(document).ready(function () {
+    var contact = $("#download-form");
+    var message = $("#contact-message");
+    var message_bad = $("#contact-message-bad");    
+    $(contact).validate({
+        submitHandler: function(form) {
+        $.ajax({
+            type : 'GET',
+            url: contact.attr('action'),
+            data: contact.serialize() + '&action=mail',
+            success:function(data) {                
+                if (parseInt(data) === 1) {
+                    //contact.hide();
+                    //contact[0][0].disabled = true;
+                    contact[0].reset();
+                    message.removeClass('hide');
+                    message.appendTo(contact);
+                } else {
+                    message_bad.removeClass('hide');
+                    message_bad.appendTo(contact);
+                }
+            },
+            error: function(errorThrown){
+                console.log(errorThrown);
+            }
+        });
+
+      }
+    });
+    
+});
+    </script>    
 </body>
 </html>
