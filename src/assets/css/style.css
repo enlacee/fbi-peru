@@ -230,11 +230,12 @@ ul li span {
     padding: 12px 60px;
     font-size: 20px;
 }
-.btn-send:hover{
+.btn-send:hover,btn-send:focus,.btn-send:active{
     /*background-color: rgba(255, 150, 0, 0.7);*/
-    background-color: #FF9600;
-    color:white;
+    background-color: #FF9600 !important;
+    color:white !important;
 }
+
 
 /* four */
 .four .two-description{
