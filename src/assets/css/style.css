@@ -54,13 +54,13 @@
  * Style
 ****************************************/
 .one-title-first {
-    padding: 0 72px;
+    padding: 0 62px;
     margin:55px 0 0 0;    
 }
 .one-title-first h1,h2 {
     font-family: 'Arial';
     font-weight: bold;
-    font-size: 25px;  
+    font-size: 33px;  
 }
 
 .one-title-second {
@@ -68,7 +68,8 @@
     font-style: italic;
     font-size: 20px;
     padding : 0 75px;
-    line-height: 20px
+    line-height: 20px;
+    color: #1A171B;
 }
 .one-title-third {
     padding: 0 67px;
@@ -100,7 +101,6 @@
 .box-center {
     display: block;    
     padding: 0px;
-    /*width: 40%*/
 }
 /* Small devices (tablets, 768px and up) */
 @media screen and (min-width: 200px) and (max-width: 992px) {
@@ -124,8 +124,7 @@
     padding: 28px;
     position: absolute;
     display: block;
-    bottom: -15px;
-    border: 1px solid red;
+    bottom: -40px;    
     background-color: white;
     width: 100%;
 }
@@ -269,8 +268,22 @@ ul li span {
     color:white;
     margin: 0  0 15px 0;
 }
-
-
+/*six*/
+.six {
+    padding: 25px 0 180px 0;
+}
+.six-title {
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 33px;
+    margin:0 0 0 45px;
+}
+.direction {
+    font-family: 'MuseoSans-100' !important;
+    font-size: 18px;
+    font-weight: bold;
+    color:black;
+}
 
 /* general */
 h1,h2,h3,h4,h5,h6 {
@@ -286,6 +299,12 @@ h1{
 }
 .error {
     color: #D60204 !important;
+}
+.sub-line{
+    background: transparent url('../img/sub-line.png') no-repeat bottom center;
+    height: 10px;
+    width: 35px;
+    padding: 0 0 10px 0;
 }
 /* form
 ----------------------------*/
@@ -346,9 +365,18 @@ div.centered table
     border:1px solid blue;
 }
 .sky {
-    background-color: #B8FAFB;
+    /*background-color: #AFDEF4;*/
+background: rgb(161,214,237); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(161,214,237,1) 0%, rgba(172,218,239,1) 11%, rgba(174,220,242,1) 32%, rgba(175,222,244,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(161,214,237,1)), color-stop(11%,rgba(172,218,239,1)), color-stop(32%,rgba(174,220,242,1)), color-stop(100%,rgba(175,222,244,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(161,214,237,1) 0%,rgba(172,218,239,1) 11%,rgba(174,220,242,1) 32%,rgba(175,222,244,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(161,214,237,1) 0%,rgba(172,218,239,1) 11%,rgba(174,220,242,1) 32%,rgba(175,222,244,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(161,214,237,1) 0%,rgba(172,218,239,1) 11%,rgba(174,220,242,1) 32%,rgba(175,222,244,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(161,214,237,1) 0%,rgba(172,218,239,1) 11%,rgba(174,220,242,1) 32%,rgba(175,222,244,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1d6ed', endColorstr='#afdef4',GradientType=0 ); /* IE6-9 */
+
 }
-.white {
+.white-gray {
     /*background-color: white;*/
 background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.12) 50%, rgba(204,204,204,0.2) 82%, rgba(124,124,124,0.23) 94%, rgba(79,79,79,0.24) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.12)), color-stop(82%,rgba(204,204,204,0.2)), color-stop(94%,rgba(124,124,124,0.23)), color-stop(100%,rgba(79,79,79,0.24))); /* Chrome,Safari4+ */
@@ -357,6 +385,9 @@ background: -o-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.12
 background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,0.12) 50%,rgba(204,204,204,0.2) 82%,rgba(124,124,124,0.23) 94%,rgba(79,79,79,0.24) 100%); /* IE10+ */
 background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,0.12) 50%,rgba(204,204,204,0.2) 82%,rgba(124,124,124,0.23) 94%,rgba(79,79,79,0.24) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#3d4f4f4f',GradientType=0 ); /* IE6-9 */
+}
+.white {
+    background-color: white;
 }
 .orange {
     background-color: #FFA200;
