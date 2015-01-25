@@ -55,7 +55,7 @@
 ****************************************/
 .one-title-first {
     padding: 0 62px;
-    margin:55px 0 0 0;    
+    margin:5px 0 0 0;    
 }
 .one-title-first h1,h2 {
     font-family: 'Arial';
@@ -274,7 +274,7 @@ ul li span {
 }
 /*six*/
 .six {
-    padding: 25px 0 180px 0;
+    padding: 0px 0 180px 0;
 }
 .six-title {
     font-family: 'Arial';
@@ -284,7 +284,7 @@ ul li span {
 }
 .direction {
     font-family: 'MuseoSans-100' !important;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     color:black;
 }
