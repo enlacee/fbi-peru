@@ -138,13 +138,16 @@
     font-family: 'ChronicleTextG1-Roman' !important;
     font-style: italic;
     font-size:26px;
-    padding: 0 67px;
+    padding: 0 100px;
     margin: 0 0 0 0;
+    text-align:center;
 }
 .twin-column {
     font-family: 'MuseoSans-100' !important;
-    font-style: italic;
-    font-size: 16px;
+    font-size: 15px;
+    text-align: left;
+    font-weight: bold;
+    color:black;
 }
 
 
