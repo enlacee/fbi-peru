@@ -1,19 +1,26 @@
 =======
-# fbi-peru
+# PBI-PERÚ
 Landing page with animations webdesign responsive
+website : [marcasperuanasdelfuturo](http://www.marcasperuanasdelfuturo.com)
+
+
 
 
 ## Requirements
 Generar documento excel con todo lo gente registrada en la pagina:
 
-formulario de ingreso. 
-    index.html : Descarga el Ranking aquí
+1. formulario de ingreso. **Descarga el Ranking aquí**.
 
-Generacion del reporte.
+    index.html
+
+2. Generacion del reporte.
+
     excel.php
 
+
 ## Developer
-Configura correo FROM:
+1. **Configura correo FROM:**
+
 en el archivo send-mail.php:41
 ver codigo en:
 
@@ -22,12 +29,17 @@ ver codigo en:
     $fromName = ''; // Enter mail Comapny contacto@dominio.com 
     $message = $messageLab;
 
+2. **Limpiar base de datos**
+
+Eliminar o limpiar la base de datos existe un archivo donde se almacenan todos los
+usuarios que realizan la solicitu de *Descarga el ranking*
+Eliminar este archivo.
+    
+    mysqlitedb.db
 
 
 
-
-
-## Resouce animations
+## Resouce dev animations
  
 1. [linsten scroll jquery](http://api.jquery.com/scroll/)
 
