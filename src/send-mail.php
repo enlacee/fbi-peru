@@ -11,16 +11,21 @@ $mailVisit = (isset($_REQUEST['email'])) ? $_REQUEST['email'] : '';
 $name = (isset($_REQUEST['nombre'])) ? $_REQUEST['nombre'] .' '. $_REQUEST['apellido'] : '';
 $company = (isset($_REQUEST['compania'])) ? $_REQUEST['compania'] : '-';
 $job = (isset($_REQUEST['puesto'])) ? $_REQUEST['puesto'] : '-';
+$created_at = date('Y-m-d H:i:s');
 
 // save in database
-$db = new SQLite3('mysqlitedb.db');
-$resultCount = $db->query('SELECT name FROM people');
-if(empty($resultCount)) {
-    $db->exec('CREATE TABLE people (name STRING, company STRING, job STRING, mail STRING, created_at)');
+try{
+    $databaseName = 'mysqlitedb.db';
+    if (!file_exists($databaseName)){
+        $db = new PDO("sqlite:$databaseName");
+        $db->exec("CREATE TABLE people (id INTEGER PRIMARY KEY AUTOINCREMENT,name VARCHAR(255), company VARCHAR(255), job VARCHAR(255), mail VARCHAR(255), created_at DATETIME)");
+    }
+    $db = new PDO("sqlite:$databaseName");
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);    
+    $db->exec("INSERT INTO people (name, company, job, mail, created_at) VALUES ('$name', '$company', '$job', '$mailVisit', '$created_at')");
+}catch (PDOException $e){
+    echo $e->getMessage();
 }
-$db->exec("INSERT INTO people (name,company,job,mail) VALUES ('$name', '$company', '$job', '$mailVisit')");
-
-
 
 if ($action == 'mail') {
     // The message

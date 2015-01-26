@@ -1,6 +1,0 @@
-<?php
-
-function generateExel($data) {
-    
-}
-
