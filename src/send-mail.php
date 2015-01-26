@@ -38,7 +38,7 @@ if ($action == 'mail') {
     
     /**_layout mail***/
     $to = $mailVisit;
-    $fromName = $name; 
+    $fromName = ''; // Enter mail Comapny contacto@dominio.com 
     $message = $messageLab;
 
     /* GET File Variables */

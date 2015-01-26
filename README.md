@@ -12,10 +12,15 @@ formulario de ingreso.
 Generacion del reporte.
     excel.php
 
+## Developer
+Configura correo FROM:
+en el archivo send-mail.php:41
+ver codigo en:
 
-
-***
-
+    /**_layout mail***/
+    $to = $mailVisit;
+    $fromName = ''; // Enter mail Comapny contacto@dominio.com 
+    $message = $messageLab;
 
 
 
