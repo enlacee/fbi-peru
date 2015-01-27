@@ -308,14 +308,6 @@ ul li span {
     width: 128px;
     height: 128px;*/
 }
-
-/*#eye { display: inline-block; }*/
-#eye img:last-child { 
-    position: absolute;
-    top: 0;
-    left: 25px;
-    display: none;
-}
 .eye-box-left {
     width: 50.97%;
     float: left;
