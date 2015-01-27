@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css?a=ad">
+    <link rel="stylesheet" href="assets/css/style.css?a=d">
     <title>Las marcas peruanas del futuro</title>
 </head>
 <body>
@@ -44,6 +44,7 @@
                         <div class="eye-box-left red">red</div>
                         <div id="eye" class="eye-box-center  blue">
                             <img src="assets/img/animacion/ojo.png" alt="ojo">
+                            <img src="assets/img/animacion/ojo_cerrado.png" alt="ojo-cerrado">
                         </div>
                         <div class="eye-box-right hidden-xs red">red</div>
                         
@@ -64,7 +65,9 @@
                     <div class="object-paratrooper blue">
                         <div class="paratrooper-box-left blue"></div>                     
                         <div class="paratrooper red">
-                            <img src="assets/img/animacion/paracaidas.png" alt="paracaidas">
+                            <div class="obj-paratrooper">
+                                <img src="assets/img/animacion/paracaidas.png" alt="paracaidas">
+                            </div>
                         </div>
 
                         <div class="clear"></div>
@@ -74,7 +77,9 @@
                     <div class="object-clound-1">
                         <div class="clound-1-box-left blue"></div>                     
                         <div class="clound-1 red">
-                            <img src="assets/img/animacion/nube1.png" alt="nube">
+                            <div class="obj-clound-1">
+                            <img  src="assets/img/animacion/nube1.png" alt="nube">
+                            <div>
                         </div>
 
                         <div class="clear"></div>                        
@@ -83,35 +88,45 @@
                     <!--clound 2-->
                     <div class="object-clound-2 hidden-xs">                                          
                         <div class="clound-2 red">
+                            <div class="obj-clound-2">
                             <img src="assets/img/animacion/nube2.png" alt="nube">
+                            </div>
                         </div>                                               
                     </div>
 
                     <!--clound 3-->
                     <div class="object-clound-3 hidden-xs">                                          
                         <div class="clound-3 red">
+                            <div class="obj-clound-3">
                             <img src="assets/img/animacion/nube3.png" alt="nube">
+                            </div>
                         </div>                                               
                     </div>
 
                     <!--clound 4-->
                     <div class="object-clound-4 hidden-xs">                                          
                         <div class="clound-4 red">
+                            <div class="obj-clound-4">
                             <img src="assets/img/animacion/nube4.png" alt="nube">
+                            </div>
                         </div>                                               
                     </div>
 
                     <!--clound 5-->
                     <div class="object-clound-5 hidden-xs">                                          
                         <div class="clound-5 red">
+                            <div class="obj-clound-5">
                             <img src="assets/img/animacion/nube5.png" alt="nube">
+                            </div>
                         </div>                                               
                     </div>
 
                     <!--clound 6-->
                     <div class="object-clound-6 hidden-xs">                                          
                         <div class="clound-6 red">
+                            <div class="obj-clound-5">
                             <img src="assets/img/animacion/nube6.png" alt="nube">
+                            </div>
                         </div>                                               
                     </div>                                                                          
 
@@ -450,6 +465,68 @@ $(document).ready(function () {
     });
     
 });
+/**
+ * Generate animation home
+ */
+$(document).ready(function() {
+    // eye
+    setInterval(function() {        
+        $('#eye').find("img:last").fadeToggle();        
+    }, 2500);
+
+    // clounds
+    var animateMe = function(targetElement, speed){
+        $( targetElement ).css('position','initial');
+        $( targetElement ).animate({ "padding-left": "+=3px" }, "slow" );
+        $( targetElement ).animate({ "padding-left": "-=1px" }, "slow" );    
+    };
+    var a = 0;
+    setInterval(function() {        
+        if(a==10) {    
+            $('.obj-clound-1, .obj-clound-2, .obj-clound-3, .obj-clound-4, .obj-clound-5, .obj-clound-6').animate({ "padding-left": "0px" }, "slow" );
+            a=0;
+        } else {
+            animateMe($('.obj-clound-1'));
+            animateMe($('.obj-clound-2'));
+            animateMe($('.obj-clound-3'));
+            animateMe($('.obj-clound-4'));
+            animateMe($('.obj-clound-5'));
+            animateMe($('.obj-clound-6'));            
+        }
+        a++;
+    }, 1500);
+
+    //plane
+    var i=0;
+     setInterval(function() {
+        if(i==30) {
+            $('.object-plane').animate({ "padding-left": "0px" }, "slow" );
+            i=0;
+        } else {
+            $('.object-plane').animate({ "padding-left": "+=15px" }, "slow" );   
+        }         
+         i++;
+    }, 1000);
+
+    //paratrooper    
+    var b=0;
+    $('.obj-paratrooper').css('position','absolute');
+     setInterval(function() {
+        if(b==50) {
+            $('.obj-paratrooper').animate({ "margin-top": "0px" }, "slow" );
+            b=0;
+        } else {
+            $('.obj-paratrooper').animate({ "margin-top": "+=1px" } );   
+        }         
+         b++;
+    }, 500);
+    
+
+ });
+
+
+
+
     </script>    
 </body>
 </html>
