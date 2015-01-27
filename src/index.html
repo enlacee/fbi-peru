@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css?a=ss">
+    <link rel="stylesheet" href="assets/css/style.css?a=2225">
     <title>Las marcas peruanas del futuro</title>
 </head>
 <body>
@@ -41,8 +41,9 @@
                     <!-- Ojo-->
                     <div class="object">
                         <div class="eye-box-left">&nbsp;</div>
-                        <div id="eye" class="eye-box-center ">
-                            <img class ="object-eye" src="assets/img/animacion/ojo.png" alt="ojo">
+                        <div id="eye" class="eye-box-center  ">
+                            <img src="assets/img/animacion/ojo.png" alt="ojo">
+                            <img src="assets/img/animacion/ojo_cerrado.png" alt="ojo-cerrado">
                         </div>
                         <div class="eye-box-right hidden-xs">&nbsp;</div>
                         
@@ -457,16 +458,9 @@ $(document).ready(function () {
  */
 $(document).ready(function() {
     // eye
-    var c = 0;
-    setInterval(function() {     console.log("sssss");
-        if (c == 2) {
-            $('.object-eye').attr('src', 'assets/img/animacion/ojo_cerrado.png');
-            c=0;
-        }else {
-            $('.object-eye').attr('src', 'assets/img/animacion/ojo.png');
-        }
-        c++;
-    }, 1500);
+    setInterval(function() {        
+        $('#eye').find("img:last").fadeToggle();        
+    }, 2500);
 
     // clounds
     var animateMe = function(targetElement, speed){

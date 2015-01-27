@@ -303,6 +303,13 @@ ul li span {
 .clear {
     clear: both;
 }
+/*#eye { display: inline-block; }*/
+#eye img:last-child { 
+    position: absolute;
+    top: 0;
+    left: 25px;
+    display: none;
+}
 #eye {
     /*background: transparent url('../img/animacion/ojo.png') no-repeat top left;
     width: 128px;
